@@ -3,13 +3,18 @@
     padding: 0;
 }
 body, html{
-
+    background-image: url('./components/back.jpg');
+    background-size: cover;
 }
 .logo{
-    color: #612f74;
+    background-image: url('./components/logo.png');
+    color: rgb(97, 47, 116);
+    background-color: aqua;
+    background-size: cover;
+    border: none;
 }
 .nav{
-    background-color: rgb(17, 136, 184);
+    background-color: white;
     align-items: center;
     height: 10vh;
     display: flex;
