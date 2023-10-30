@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)sxut0y@clk-)@@xl9tc&hx^be55t8v0p27t#($u^lh0qnv^s6'
+SECRET_KEY = 'django-insecure-xylyl!cr)^_6al3)s2bv727hn$bgcltz%=7t&8#0$j+_nvienx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -55,7 +55,9 @@ ROOT_URLCONF = 'myfinances.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'users', 'templates')],  # Adicione esta linha
+        'DIRS': [
+            os.path.join(BASE_DIR, 'my-react/build')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,7 +69,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 WSGI_APPLICATION = 'myfinances.wsgi.application'
 
@@ -123,3 +124,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, 'my-react/build/static')
+]
