@@ -1,9 +1,12 @@
 
 import './App.css';
+import PaginaInicial from './components/PaginaInicial';
 
 function App() {
   return (
-    <h1>olá, mundo</h1>
+    <div>
+      <PaginaInicial />
+    </div>
   )
 }
 

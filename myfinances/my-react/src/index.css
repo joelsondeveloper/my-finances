@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+
+}
+.logo{
+    color: #612f74;
+}
+.nav{
+    background-color: rgb(17, 136, 184);
+    align-items: center;
+    height: 10vh;
+    display: flex;
+}
