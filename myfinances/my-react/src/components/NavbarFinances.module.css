@@ -1,1 +1,78 @@
+/* Estilos padrão para telas grandes */
+.nav {
+    background-color: white;
+    align-items: center;
+    height: 10vh;
+    display: flex;
+}
 
+.logo {
+    background-image: url('./logo1.png');
+    color: rgb(97, 47, 116);
+    background-size: cover;
+    width: 4vw;
+    height: 6vh;
+    border: none;
+    margin-left: 2vw;
+}
+
+.linknav {
+    margin-left: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.baixo {
+    background-image: url('./baixo.jpg');
+    color: rgb(97, 47, 116);
+    background-size: cover;
+    width: 1.3vw;
+    height: 1.4vh;
+    border: none;
+    margin-top: 1.1vh;
+    margin-left: 1vw;
+}
+
+.cadastro {
+    margin-left: 20vw;
+    background-color: rgb(97, 47, 116);
+    color: white;
+    height: 7vh;
+    width: 11vw;
+    border: none;
+    border-radius: 10px;
+}
+
+.cadastro:hover {
+    background-color: rgb(76, 32, 94);
+}
+
+.logomenu {
+    margin-left: 87vw;
+    background-image: url(./menu.png);
+    background-size: cover;
+    height: 4.5vh;
+    width: 2.54vw;
+    border: none;
+    display: none;
+}
+
+.logomenu:hover {
+    background-color: rgb(76, 32, 94);
+}
+
+
+@media screen and (max-width: 1250px) {
+    .linknav,
+    .baixo,
+    .cadastro {
+        display: none;
+    }
+    .logomenu {
+        display: flex;
+    }
+    .logo {
+        height: 5vh;
+        width: 3.33vw;
+    }
+}
