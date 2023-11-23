@@ -5,8 +5,9 @@
 }
 
 body, html {
-    background-image: url('./components/back.jpg');
-    background-size: cover;
+    background-image: url('./components/back.png');
+    background-size: 100vw;
     background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
 }
 

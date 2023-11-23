@@ -1,8 +1,12 @@
 import NavbarFinances from "./NavbarFinances"
+import ConteudoFinances from "./ConteudoFinances"
 
 function PaginaInicial() {
     return(
-        <NavbarFinances/>
+        <div>
+            <NavbarFinances/>
+            <ConteudoFinances/>
+        </div>
     )
 }
 
