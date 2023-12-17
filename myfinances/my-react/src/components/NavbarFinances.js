@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './NavbarFinances.module.css';
+import { Link } from 'react-router-dom';
 
 const NavbarFinances = () => {
   return (
@@ -40,9 +41,9 @@ const NavbarFinances = () => {
         </div>
       </div>
       <button className={styles.cadastro}>
-        <a href='oi'>
+        <Link to="/cadastro">
           <h3>Cadastre-se</h3>
-        </a>
+        </Link>
       </button>
       <div className={styles.logomenu}></div>
     </div>

@@ -8,7 +8,7 @@
 }
 
 .logo {
-    background-image: url('./logo1.png');
+    background-image: url('logo1.png');
     color: rgb(97, 47, 116);
     background-size: cover;
     width: 40px;
